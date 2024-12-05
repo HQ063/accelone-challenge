@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
-import { ContactService } from "../services/contacts"
-import type { CreateContactDTO, UpdateContactDTO } from "../types/contact"
+import { ContactService } from "../services/contacts.js"
+import type { CreateContactDTO, UpdateContactDTO } from "../types/contact.js"
 
 interface ValidatedRequest<T> extends Request {
   body: T

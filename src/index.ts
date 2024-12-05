@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import morgan from "morgan"
-import { router as contactsRouter } from "./routes/contacts"
+import { router as contactsRouter } from "./routes/contacts.js"
 
 const app = express()
 const PORT = process.env.PORT || 3000
