@@ -10,7 +10,7 @@ const ContactDataType = z.enum(["Home", "Work", "Mobile", "Other"])
 export const PhoneNumberSchema = z.object({
   type: ContactDataType,
   label: z.string().optional(),
-  number: z.string().regex(/\+?\d{8,15}/),
+  number: z.string().regex(/^\+?\d{8,15}$/),
 })
 
 export const AddressSchema = z.object({
